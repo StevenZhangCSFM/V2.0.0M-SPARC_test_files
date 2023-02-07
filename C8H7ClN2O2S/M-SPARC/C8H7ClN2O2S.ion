@@ -1,0 +1,54 @@
+ATOM_TYPE: Cl               # atom type followed with valence charge
+N_TYPE_ATOM: 1               # number of atoms of this type
+PSEUDO_POT: 17_Cl_7_1.9_1.9_pbe_n_v1.0.psp8
+COORD:
+  2.4624685080E+01   1.1672075209E+01   1.0797565279E+01
+
+ATOM_TYPE: S               # atom type followed with valence charge
+N_TYPE_ATOM: 1               # number of atoms of this type
+PSEUDO_POT: 16_S_6_1.8_1.9_pbe_n_v1.0.psp8
+COORD:
+  1.4498932318E+01   9.8135280498E+00   1.0718295792E+01
+
+ATOM_TYPE: O               # atom type followed with valence charge
+N_TYPE_ATOM: 2               # number of atoms of this type
+PSEUDO_POT: 08_O_6_1.2_1.4_pbe_n_v1.0.psp8
+COORD:
+  1.4556293915E+01   8.5358348222E+00   8.3093747361E+00
+  1.4561421984E+01   8.3493200904E+00   1.3017327945E+01
+
+ATOM_TYPE: N               # atom type followed with valence charge
+N_TYPE_ATOM: 2               # number of atoms of this type
+PSEUDO_POT: 07_N_5_1.2_1.4_pbe_n_v1.0.psp8
+COORD:
+  1.4108231896E+01   1.5513917094E+01   1.0785549497E+01
+  1.1947715770E+01   1.1590076663E+01   1.0784004451E+01
+
+ATOM_TYPE: C               # atom type followed with valence charge
+N_TYPE_ATOM: 8               # number of atoms of this type
+PSEUDO_POT: 06_C_4_1.2_1.2_pbe_n_v1.0.psp8
+COORD:
+  1.7056829871E+01   1.1998537960E+01   1.0783791191E+01
+  1.6580981171E+01   1.4606677716E+01   1.0790284493E+01
+  1.1975811591E+01   1.4039164379E+01   1.0789331824E+01
+  1.9532606354E+01   1.1081722741E+01   1.0790388032E+01
+  1.8627320068E+01   1.6296775249E+01   1.0800646571E+01
+  2.1533471151E+01   1.2785290641E+01   1.0797910752E+01
+  2.1089706458E+01   1.5395676716E+01   1.0802187577E+01
+  9.5202868513E+00   1.5465282916E+01   1.0799714064E+01
+
+
+ATOM_TYPE: H               # atom type followed with valence charge
+N_TYPE_ATOM: 7               # number of atoms of this type
+PSEUDO_POT: 01_H_1_1.0_1.0_pbe_v1.0.psp8
+COORD:
+  1.3868196434E+01   1.7412240260E+01   1.0800438603E+01
+  1.9874701101E+01   9.0553377230E+00   1.0783861906E+01
+  1.8280797126E+01   1.8328248321E+01   1.0805788515E+01
+  2.2676124729E+01   1.6701575915E+01   1.0806918748E+01
+  9.3730535912E+00   1.6665103746E+01   1.2486819394E+01
+  7.9505804007E+00   1.4127744464E+01   1.0788551929E+01
+  9.3758200608E+00   1.6687118658E+01   9.1278504951E+00
+
+
+

@@ -1,0 +1,77 @@
+
+#Unit cell description
+#*********************
+acell  16.0   16.0   4.647785137
+# ngfft  3*80
+natom  12
+ntypat 1
+znucl 6
+typat  12*1
+nband  36
+rprim   1.00000000   0.000000000   0.000000000  
+        0.00000000   1.000000000   0.000000000  
+        0.00000000   0.000000000   1.000000000  
+xcart   11.8436873686101 8 0
+        10.9444353498103 10.4706746160512 0
+        6.07815631569498 11.3287309054217 0
+        4.38811534310913 9.31461850471107 0
+        6.07815631569497 4.67126909457834 0
+        8.66744930708053 4.21470687923773 0
+        9.92184368430502 11.3287309054217 2.3238925685
+        7.33255069291947 11.7852931207623 2.3238925685
+        4.15631263138995 8 2.3238925685
+        5.05556465018966 5.52932538394881 2.3238925685
+        9.92184368430502 4.67126909457833 2.3238925685
+        11.6118846568909 6.68538149528893 2.3238925685
+ixc    -263267
+nsym   1
+
+#k-points and symetries
+#**********************
+ kptopt 1
+ ngkpt 1 1 10
+ nshiftk 1  
+ shiftk  0.0 0.0 0.5
+
+#Plane wave basis set
+#********************
+ecut   150.   # 800
+ecutsm 0.5d0 # What is its function? 0.5d0
+
+#SCF procedure parameters
+#************************
+nstep     60
+toldfe    1.d-5
+diemac    1.0 # Set as 1.0= MIXING_PRECOND: none
+diemix    0.5
+iscf      7 # potential pulay mixing
+occopt 3            # 1 = insulator, 3 =  Fermi-Dirac smearing, 7 = gaussian broadening
+tsmear 0.001         # broadening energy parameter (Ha): default = 0.04, 0.01 better for d-band metals
+usekden 1
+
+#Parallel
+#************************
+# autoparal 1
+
+#Miscelaneous
+*************
+prtden 0
+prtwf  0
+prteig 0
+
+
+#%%<BEGIN TEST_INFO>
+#%% [setup]
+#%% executable = abinit
+#%% [files]
+#%% files_to_test = 
+#%%   t10.abo, tolnlines = 0, tolabs = 0.0, tolrel = 0.0, fld_options = -medium 
+#%% [paral_info]
+#%% max_nprocs = 2
+#%% [extra_info]
+#%% authors = M. Torrent
+#%% keywords = 
+#%% description = 
+#%%   Argon FCC. Test the vdW-DFT-D2 (Grimme) semi-empirical potential.
+#%% topics = vdw
+#%%<END TEST_INFO>

@@ -1,0 +1,149 @@
+***************************************************************************
+*                      M-SPARC v1.0.0 (Oct 16, 2022)                      *
+*   Copyright (c) 2019 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                Date: 30-Oct-2022  Start time: 17:58:44                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+LATVEC_SCALE: 1.000000 1.000000 1.000000 
+LATVEC:
+32.000000000000000 0.000000000000000 0.000000000000000 
+0.000000000000000 26.000000000000000 0.000000000000000 
+0.000000000000000 0.000000000000000 18.000000000000000 
+FD_GRID: 133 108 75
+FD_ORDER: 12
+BC: D D D
+ELEC_TEMP_TYPE: fermi-dirac
+SMEARING: 0.001000000
+CHEB_DEGREE: 31
+NSTATES: 49
+EXCHANGE_CORRELATION: GGA_PBE
+CALC_STRESS: 0
+CALC_PRES: 0
+MAXIT_SCF: 100
+TOL_SCF: 1.00E-05
+TOL_POISSON: 1.00E-07
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.00E-07
+MIXING_VARIABLE: potential
+MIXING_PRECOND: kerker
+TOL_PRECOND: 5.78E-05
+PRECOND_KERKER_KTF: 1.00
+PRECOND_KERKER_THRESH: 0.10
+MIXING_PARAMETER: 0.70
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART: 0
+REFERENCE_CUTOFF: 0.50
+RHO_TRIGGER: 4
+FIX_RAND: 0
+PRINT_FORCES: 1
+PRINT_ATOMS: 1
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+OUTPUT_FILE: /home/bzhang376/Documents/M-SPARC_update_paper/testResults/C8H7ClN2O2S/C8H7ClN2O2S_elecDens_afterRelax/C8H7ClN2O2S.out
+D3_FLAG: 1
+D3_RTHR: 9000.000000
+D3_CN_THR: 1600.000000
+***************************************************************************
+                                Cell                                       
+***************************************************************************
+Lattice vectors:
+32.000000000000000 0.000000000000000 0.000000000000000 
+0.000000000000000 26.000000000000000 0.000000000000000 
+0.000000000000000 0.000000000000000 18.000000000000000 
+Volume                  :  1.4976000000E+04 (Bohr^3)
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Mesh spacing in x-direction        :  0.240602 (Bohr)
+Mesh spacing in y-direction        :  0.240741 (Bohr)
+Mesh spacing in z direction        :  0.240000 (Bohr)
+Output printed to                  :  /home/bzhang376/Documents/M-SPARC_update_paper/testResults/C8H7ClN2O2S/C8H7ClN2O2S_elecDens_afterRelax/C8H7ClN2O2S.out
+Total number of atom types         :  6
+Total number of atoms              :  21
+Total number of electrons          :  74
+Atom type 1  (valence electrons)   :  Cl 7
+Pseudopotential                    :  17_Cl_7_1.9_1.9_pbe_n_v1.0.psp8
+lloc                               :  4
+Pseudocharge radii of atom type 1  :  6.74 6.74 6.72
+Number of atoms of type 1          :  1
+Atom type 2  (valence electrons)   :  S 6
+Pseudopotential                    :  16_S_6_1.8_1.9_pbe_n_v1.0.psp8
+lloc                               :  4
+Pseudocharge radii of atom type 2  :  6.50 6.50 6.48
+Number of atoms of type 2          :  1
+Atom type 3  (valence electrons)   :  O 6
+Pseudopotential                    :  08_O_6_1.2_1.4_pbe_n_v1.0.psp8
+lloc                               :  4
+Pseudocharge radii of atom type 3  :  6.50 6.50 6.48
+Number of atoms of type 3          :  2
+Atom type 4  (valence electrons)   :  N 5
+Pseudopotential                    :  07_N_5_1.2_1.4_pbe_n_v1.0.psp8
+lloc                               :  4
+Pseudocharge radii of atom type 4  :  6.74 6.74 6.72
+Number of atoms of type 4          :  2
+Atom type 5  (valence electrons)   :  C 4
+Pseudopotential                    :  06_C_4_1.2_1.2_pbe_n_v1.0.psp8
+lloc                               :  4
+Pseudocharge radii of atom type 5  :  6.50 6.50 6.48
+Number of atoms of type 5          :  8
+Atom type 6  (valence electrons)   :  H 1
+Pseudopotential                    :  01_H_1_1.0_1.0_pbe_v1.0.psp8
+lloc                               :  4
+Pseudocharge radii of atom type 6  :  3.61 3.61 3.60
+Number of atoms of type 6          :  7
+Estimated total memory usage       :  5.58 GB
+=====================================================================
+                    Self Consistent Field (SCF#1)                     
+=====================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -6.3247625435E+00        1.834E-01        164.099
+2            -6.3503319373E+00        7.751E-02        69.739
+3            -6.3525071780E+00        5.298E-02        68.394
+4            -6.3535816828E+00        3.531E-02        69.783
+5            -6.3535898210E+00        1.858E-02        65.542
+6            -6.3536484951E+00        8.591E-03        66.451
+7            -6.3536489412E+00        6.158E-03        64.790
+8            -6.3536544629E+00        2.983E-03        65.059
+9            -6.3536568163E+00        1.704E-03        62.945
+10           -6.3536571810E+00        9.990E-04        63.259
+11           -6.3536572413E+00        6.293E-04        61.600
+12           -6.3536572366E+00        3.449E-04        59.672
+13           -6.3536572470E+00        2.008E-04        60.265
+14           -6.3536573398E+00        1.416E-04        58.969
+15           -6.3536573403E+00        8.935E-05        58.424
+16           -6.3536573309E+00        4.808E-05        59.404
+17           -6.3536573522E+00        3.468E-05        57.607
+18           -6.3536573220E+00        2.094E-05        56.933
+19           -6.3536573347E+00        1.179E-05        56.880
+20           -6.3536573070E+00        7.126E-06        55.050
+Total number of SCF: 20    
+====================================================================
+                                Energy                              
+====================================================================
+Free energy per atom               : -6.3542356316E+00 (Ha/atom)
+Total free energy                  : -1.3343894826E+02 (Ha)
+Band structure energy              : -3.7199284872E+01 (Ha)
+Exchange correlation energy        : -4.1683474255E+01 (Ha)
+Self and correction energy         : -2.1803711115E+02 (Ha)
+Entropy*kb*T                       : -7.4687920354E-08 (Ha)
+Fermi level                        : -1.0075727128E-01 (Ha)
+DFT-D3 correction                  : -1.2144817882E-02 (Ha)
+Average force                      :  1.5637016787E-04 (Ha/Bohr)
+Maximum force                      :  3.4088723855E-04 (Ha/Bohr)
+Time for force calculation         :  3.984 (sec)
+***************************************************************************
+                               Timing info                                 
+***************************************************************************
+Total walltime                     :  1429.703 sec
+___________________________________________________________________________
+
+***************************************************************************
+*             Material Physics & Mechanics Group, Georgia Tech            *
+*                       PI: Phanish Suryanarayana                         *
+*                Main Developers: Qimen Xu, Abhiraj Sharma                *
+*     Acknowledgements: U.S. DOE (DE-SC0019410); NSF (1333500,1553212)    *
+***************************************************************************
+                                                                           
