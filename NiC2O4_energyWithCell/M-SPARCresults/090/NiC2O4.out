@@ -1,0 +1,136 @@
+***************************************************************************
+*                      M-SPARC v1.0.0 (Oct 16, 2022)                      *
+*   Copyright (c) 2019 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                Date: 29-Oct-2022  Start time: 14:42:32                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+LATVEC_SCALE: 0.900000 0.900000 0.900000 
+LATVEC:
+0.000000000000000 10.137047333976900 0.000000000000000 
+9.612603356756811 0.000000000000000 0.000000000000000 
+0.000000000000000 -5.745580610420000 -9.877610936232390 
+FD_GRID: 46 43 51
+FD_ORDER: 12
+BC: P P P
+KPOINT_GRID: 2 2 2
+KPOINT_SHIFT: 5.000000e-01 5.000000e-01 5.000000e-01
+SPIN_TYP: 1
+ELEC_TEMP_TYPE: fermi-dirac
+SMEARING: 0.001000000
+CHEB_DEGREE: 35
+NSTATES: 65
+EXCHANGE_CORRELATION: vdWDF1
+CALC_STRESS: 1
+MAXIT_SCF: 100
+TOL_SCF: 1.00E-05
+TOL_POISSON: 1.00E-07
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.00E-07
+MIXING_VARIABLE: potential
+MIXING_PRECOND: kerker
+MIXING_PRECOND_MAG: none
+TOL_PRECOND: 4.02E-05
+PRECOND_KERKER_KTF: 1.00
+PRECOND_KERKER_THRESH: 0.10
+MIXING_PARAMETER: 0.70
+MIXING_PARAMETER_MAG: 0.70
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART: 0
+REFERENCE_CUTOFF: 0.50
+RHO_TRIGGER: 4
+FIX_RAND: 0
+PRINT_FORCES: 1
+PRINT_ATOMS: 1
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+OUTPUT_FILE: NiC2O4.out
+VDWDF_GEN_KERNEL: 0
+***************************************************************************
+                                Cell                                       
+***************************************************************************
+Lattice vectors:
+0.000000000000000 9.123342600579210 0.000000000000000 
+8.651343021081130 0.000000000000000 0.000000000000000 
+0.000000000000000 -5.171022549378000 -8.889849842609152 
+Volume                  :  7.0166843693E+02 (Bohr^3)
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Mesh spacing in x-direction        :  0.198334 (Bohr)
+Mesh spacing in y-direction        :  0.201194 (Bohr)
+Mesh spacing in z direction        :  0.201655 (Bohr)
+Number of symmetry adapted k-points:  4
+Output printed to                  :  NiC2O4.out
+Total number of atom types         :  3
+Total number of atoms              :  14
+Total number of electrons          :  100
+Atom type 1  (valence electrons)   :  Ni 18
+Pseudopotential                    :  ../28_Ni_18_1.7_2.2_pbe_n_v1.0.psp8
+lloc                               :  4
+Pseudocharge radii of atom type 1  :  7.34 7.46 7.46
+Number of atoms of type 1          :  2
+Atom type 2  (valence electrons)   :  C 4
+Pseudopotential                    :  ../06_C_4_1.2_1.2_pbe_n_v1.0.psp8
+lloc                               :  4
+Pseudocharge radii of atom type 2  :  7.54 7.66 7.66
+Number of atoms of type 2          :  4
+Atom type 3  (valence electrons)   :  O 6
+Pseudopotential                    :  ../08_O_6_1.2_1.4_pbe_n_v1.0.psp8
+lloc                               :  4
+Pseudocharge radii of atom type 3  :  7.54 7.66 7.66
+Number of atoms of type 3          :  8
+Estimated total memory usage       :  3.40 GB
+========================================================================================
+                            Self Consistent Field (SCF#1)                     
+========================================================================================
+Iteration     Free Energy (Ha/atom)    Magnetization     SCF Error        Timing (sec)
+1            -3.3548120976E+01         3.7120E+00        8.339E-02        3230.559
+2            -3.3569267001E+01         3.4830E+00        3.875E-02        1065.049
+3            -3.3573876515E+01         3.9998E+00        1.872E-02        1051.170
+4            -3.3574864940E+01         4.0000E+00        5.161E-03        1043.464
+5            -3.3574939625E+01         4.0000E+00        1.680E-03        1046.847
+6            -3.3574943916E+01         4.0000E+00        9.462E-04        1046.653
+7            -3.3574945781E+01         4.0000E+00        2.128E-04        1041.069
+8            -3.3574945980E+01         4.0000E+00        6.745E-05        1040.817
+9            -3.3574946015E+01         4.0000E+00        3.158E-05        1039.848
+10           -3.3574946009E+01         4.0000E+00        1.385E-05        1040.337
+11           -3.3574945830E+01         4.0000E+00        1.768E-06        1039.507
+Total number of SCF: 11    
+====================================================================
+                                Energy                              
+====================================================================
+Free energy per atom               : -3.3574945830E+01 (Ha/atom)
+Total free energy                  : -4.7004924161E+02 (Ha)
+Band structure energy              : -4.5667232239E+01 (Ha)
+Exchange correlation energy        : -8.2679086942E+01 (Ha)
+Self and correction energy         : -6.7977173129E+02 (Ha)
+Entropy*kb*T                       : -7.0761701011E-10 (Ha)
+Fermi level                        :  2.9476716020E-01 (Ha)
+vdWDF energy                       :  7.9019197047E-01 (Ha)
+Net Magnetization                  :  3.9999999598E+00 
+Average force                      :  1.5263578474E-01 (Ha/Bohr)
+Maximum force                      :  2.2733498792E-01 (Ha/Bohr)
+Time for force calculation         :  35.976 (sec)
+Stress (GPa):
+    -79.9589998152       0.0076941556      -0.0000199109
+      0.0076941556    -197.5511891352      14.6606841267
+     -0.0000199109      14.6606841267     -63.2073695427
+Pressure                           :  1.1357251950E+02 (GPa)
+Maximum stress                     :  1.9755118914E+02 (GPa)
+Time for stress calculation        :  106.389 (sec)
+***************************************************************************
+                               Timing info                                 
+***************************************************************************
+Total walltime                     :  14908.357 sec
+___________________________________________________________________________
+
+***************************************************************************
+*             Material Physics & Mechanics Group, Georgia Tech            *
+*                       PI: Phanish Suryanarayana                         *
+*                Main Developers: Qimen Xu, Abhiraj Sharma                *
+*     Acknowledgements: U.S. DOE (DE-SC0019410); NSF (1333500,1553212)    *
+***************************************************************************
+                                                                           

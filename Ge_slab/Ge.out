@@ -1,0 +1,175 @@
+***************************************************************************
+*                      M-SPARC v1.0.0 (Oct 16, 2022)                      *
+*   Copyright (c) 2019 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                Date: 29-Oct-2022  Start time: 14:32:50                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+LATVEC_SCALE: 1.000000 1.000000 1.000000 
+LATVEC:
+7.647560683105030 0.000000000000000 0.000000000000000 
+-3.823780341552510 6.622981828552030 0.000000000000000 
+0.000000000000000 0.000000000000000 22.000000000000000 
+FD_GRID: 38 38 110
+FD_ORDER: 12
+BC: P P D
+KPOINT_GRID: 4 4 1
+KPOINT_SHIFT: 5.000000e-01 5.000000e-01 0
+ELEC_TEMP_TYPE: fermi-dirac
+SMEARING: 0.001000000
+CHEB_DEGREE: 35
+NSTATES: 22
+EXCHANGE_CORRELATION: HSE
+CALC_STRESS: 0
+CALC_PRES: 0
+MAXIT_SCF: 100
+TOL_SCF: 1.00E-05
+TOL_POISSON: 1.00E-07
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.00E-07
+MIXING_VARIABLE: potential
+MIXING_PRECOND: kerker
+TOL_PRECOND: 4.03E-05
+PRECOND_KERKER_KTF: 1.00
+PRECOND_KERKER_THRESH: 0.10
+MIXING_PARAMETER: 0.70
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART: 0
+REFERENCE_CUTOFF: 0.50
+RHO_TRIGGER: 4
+FIX_RAND: 0
+PRINT_FORCES: 1
+PRINT_ATOMS: 1
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+OUTPUT_FILE: Ge.out
+MAXIT_FOCK: 20
+MINIT_FOCK: 2
+TOL_FOCK: 2.00E-06
+TOL_SCF_INIT: 1.00E-03
+EXX_METHOD: FOURIER_SPACE
+ACE_FLAG: 1
+EXX_ACE_VALENCE_STATES: 3
+EXX_DIVERGENCE: AUXILIARY
+EXX_RANGE_FOCK: 0.1060
+EXX_RANGE_PBE: 0.1060
+***************************************************************************
+                                Cell                                       
+***************************************************************************
+Lattice vectors:
+7.647560683105030 0.000000000000000 0.000000000000000 
+-3.823780341552510 6.622981828552030 0.000000000000000 
+0.000000000000000 0.000000000000000 22.000000000000000 
+Volume                  :  1.1142924196E+03 (Bohr^3)
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Mesh spacing in x-direction        :  0.201252 (Bohr)
+Mesh spacing in y-direction        :  0.201252 (Bohr)
+Mesh spacing in z direction        :  0.200000 (Bohr)
+Number of symmetry adapted k-points:  8
+Output printed to                  :  Ge.out
+Total number of atom types         :  1
+Total number of atoms              :  2
+Total number of electrons          :  28
+Atom type 1  (valence electrons)   :  Ge 14
+Pseudopotential                    :  32_Ge_14_2.2_2.3_pbe_n_v1.0.psp8
+lloc                               :  4
+Pseudocharge radii of atom type 1  :  7.45 7.45 7.40
+Number of atoms of type 1          :  2
+Estimated total memory usage       :  2.12 GB
+=====================================================================
+                    Self Consistent Field (SCF#1)                     
+=====================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -8.0440352790E+01        5.229E-02        1766.207
+2            -8.0453556997E+01        4.181E-02        511.983
+3            -8.0454508056E+01        2.853E-02        498.697
+4            -8.0454616423E+01        2.174E-02        493.625
+5            -8.0454673783E+01        1.300E-02        497.576
+6            -8.0454693101E+01        7.435E-03        498.752
+7            -8.0454698477E+01        3.941E-03        498.048
+8            -8.0454699190E+01        2.099E-03        494.241
+9            -8.0454699116E+01        1.118E-03        494.747
+10           -8.0454699093E+01        7.270E-04        496.504
+Total number of SCF: 10    
+
+No.1 Exx outer loop:
+1            -7.8085423556E+01        5.348E-03        960.368
+2            -7.8086249250E+01        7.786E-03        960.381
+3            -7.8085045585E+01        1.454E-02        540.900
+4            -7.8086725924E+01        9.125E-04        535.055
+5            -7.8086725460E+01        1.049E-03        540.140
+6            -7.8086727246E+01        8.012E-04        531.869
+7            -7.8086725315E+01        6.435E-04        535.647
+8            -7.8086726905E+01        1.823E-04        531.313
+9            -7.8086726791E+01        8.142E-05        530.416
+10           -7.8086726985E+01        2.739E-05        521.357
+11           -7.8086727443E+01        1.799E-05        525.012
+12           -7.8086727423E+01        1.287E-05        521.685
+13           -7.8086727197E+01        5.869E-06        523.668
+Total number of SCF: 13    
+Exx outer loop error: 5.0124e-03 
+
+No.2 Exx outer loop:
+1            -7.8087202352E+01        6.931E-04        941.182
+2            -7.8087214919E+01        7.569E-04        941.183
+3            -7.8087216453E+01        2.166E-04        529.510
+4            -7.8087216334E+01        1.307E-04        526.848
+5            -7.8087216751E+01        6.940E-05        522.705
+6            -7.8087216783E+01        5.045E-05        525.941
+7            -7.8087216726E+01        4.347E-05        521.010
+8            -7.8087217040E+01        1.434E-05        525.668
+9            -7.8087216836E+01        6.469E-06        519.698
+Total number of SCF: 9     
+Exx outer loop error: 6.4719e-05 
+
+No.3 Exx outer loop:
+1            -7.8087222133E+01        1.148E-04        934.734
+2            -7.8087222553E+01        1.251E-04        934.734
+3            -7.8087223134E+01        1.514E-05        517.164
+4            -7.8087223085E+01        1.149E-05        518.838
+5            -7.8087222850E+01        7.791E-06        516.275
+Total number of SCF: 5     
+Exx outer loop error: 3.5112e-05 
+
+No.4 Exx outer loop:
+1            -7.8087222617E+01        2.615E-05        922.171
+2            -7.8087222960E+01        2.076E-05        922.172
+3            -7.8087223028E+01        4.412E-06        513.484
+Total number of SCF: 3     
+Exx outer loop error: 8.6485e-06 
+
+No.5 Exx outer loop:
+1            -7.8087222907E+01        1.605E-05        921.653
+2            -7.8087222293E+01        9.280E-06        921.654
+Total number of SCF: 2     
+Exx outer loop error: 1.9741e-06 
+====================================================================
+                                Energy                              
+====================================================================
+Free energy per atom               : -7.8087222293E+01 (Ha/atom)
+Total free energy                  : -1.5617444459E+02 (Ha)
+Band structure energy              : -2.4838090253E+01 (Ha)
+Exchange correlation energy        : -3.0728475705E+01 (Ha)
+Self and correction energy         : -1.9857276704E+02 (Ha)
+Entropy*kb*T                       : -3.5365106172E-10 (Ha)
+Fermi level                        : -1.6948751963E-01 (Ha)
+Average force                      :  1.1697275223E-02 (Ha/Bohr)
+Maximum force                      :  1.1697275223E-02 (Ha/Bohr)
+Time for force calculation         :  14.611 (sec)
+***************************************************************************
+                               Timing info                                 
+***************************************************************************
+Total walltime                     :  32917.337 sec
+___________________________________________________________________________
+
+***************************************************************************
+*             Material Physics & Mechanics Group, Georgia Tech            *
+*                       PI: Phanish Suryanarayana                         *
+*                Main Developers: Qimen Xu, Abhiraj Sharma                *
+*     Acknowledgements: U.S. DOE (DE-SC0019410); NSF (1333500,1553212)    *
+***************************************************************************
+                                                                           

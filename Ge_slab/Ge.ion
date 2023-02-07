@@ -1,0 +1,6 @@
+ATOM_TYPE: Ge               # atom type followed with valence charge
+N_TYPE_ATOM: 2               # number of atoms of this type
+PSEUDO_POT: 32_Ge_14_2.2_2.3_pbe_n_v1.0.psp8
+COORD: 
+   0 0 15.0121665190648
+   3.82378033796114 2.20766061318904 13.7116685076552

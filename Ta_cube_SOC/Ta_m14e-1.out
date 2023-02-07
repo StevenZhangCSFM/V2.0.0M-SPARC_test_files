@@ -1,0 +1,108 @@
+***************************************************************************
+*                      M-SPARC v1.0.0 (Oct 26, 2022)                      *
+*   Copyright (c) 2019 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                Date: 13-Nov-2022  Start time: 18:42:17                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+LATVEC_SCALE: 1.000000 1.000000 1.000000 
+LATVEC:
+6.278213975100000 0.000000000000000 0.000000000000000 
+0.000000000000000 6.278213975100000 0.000000000000000 
+0.000000000000000 0.000000000000000 6.278213975100000 
+FD_GRID: 45 45 45
+FD_ORDER: 12
+BC: P P P
+KPOINT_GRID: 6 6 6
+KPOINT_SHIFT: 0 0 0
+ELEC_TEMP_TYPE: fermi-dirac
+SMEARING: 0.001000000
+CHEB_DEGREE: 43
+NSTATES: 41
+EXCHANGE_CORRELATION: GGA_PBE
+CALC_STRESS: 0
+CALC_PRES: 0
+MAXIT_SCF: 100
+TOL_SCF: 1.00E-05
+TOL_POISSON: 1.00E-07
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.00E-07
+MIXING_VARIABLE: potential
+MIXING_PRECOND: kerker
+TOL_PRECOND: 1.95E-05
+PRECOND_KERKER_KTF: 1.00
+PRECOND_KERKER_THRESH: 0.10
+MIXING_PARAMETER: 0.70
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART: 0
+REFERENCE_CUTOFF: 0.50
+RHO_TRIGGER: 4
+FIX_RAND: 0
+PRINT_FORCES: 1
+PRINT_ATOMS: 1
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+OUTPUT_FILE: Ta.out
+***************************************************************************
+                                Cell                                       
+***************************************************************************
+Lattice vectors:
+6.278213975100000 0.000000000000000 0.000000000000000 
+0.000000000000000 6.278213975100000 0.000000000000000 
+0.000000000000000 0.000000000000000 6.278213975100000 
+Volume                  :  2.4746189820E+02 (Bohr^3)
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Mesh spacing                       :  0.139516 (Bohr)
+Number of symmetry adapted k-points:  154
+Output printed to                  :  Ta.out
+Total number of atom types         :  1
+Total number of atoms              :  2
+Total number of electrons          :  26
+Atom type 1  (valence electrons)   :  Ta 13
+Pseudopotential                    :  Ta_FR.psp8
+lloc                               :  4
+Pseudocharge radii of atom type 1  :  6.28 6.28 6.28
+Number of atoms of type 1          :  2
+Estimated total memory usage       :  34.54 GB
+=====================================================================
+                    Self Consistent Field (SCF#1)                     
+=====================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -6.5210847849E+01        2.493E-02        59487.235
+2            -6.5231451393E+01        4.754E-03        17961.351
+3            -6.5232989570E+01        6.897E-04        18181.345
+4            -6.5233082342E+01        3.857E-04        18230.517
+5            -6.5233088825E+01        6.322E-05        18205.067
+6            -6.5233089240E+01        1.287E-05        18171.276
+7            -6.5233089536E+01        3.604E-06        18121.453
+Total number of SCF: 7     
+====================================================================
+                                Energy                              
+====================================================================
+Free energy per atom               : -6.5233089536E+01 (Ha/atom)
+Total free energy                  : -1.3046617907E+02 (Ha)
+Band structure energy              : -1.2860663667E+01 (Ha)
+Exchange correlation energy        : -2.9684209045E+01 (Ha)
+Self and correction energy         : -1.7364542970E+02 (Ha)
+Entropy*kb*T                       : -5.9792670464E-04 (Ha)
+Fermi level                        :  4.8619563424E-01 (Ha)
+Average force                      :  4.5991954203E-06 (Ha/Bohr)
+Maximum force                      :  4.5991954203E-06 (Ha/Bohr)
+Time for force calculation         :  439.625 (sec)
+***************************************************************************
+                               Timing info                                 
+***************************************************************************
+Total walltime                     :  186926.617 sec
+___________________________________________________________________________
+
+***************************************************************************
+*             Material Physics & Mechanics Group, Georgia Tech            *
+*                       PI: Phanish Suryanarayana                         *
+*                Main Developers: Qimen Xu, Abhiraj Sharma                *
+*     Acknowledgements: U.S. DOE (DE-SC0019410); NSF (1333500,1553212)    *
+***************************************************************************
+                                                                           

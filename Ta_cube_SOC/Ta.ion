@@ -1,0 +1,6 @@
+ATOM_TYPE: Ta               # atom type followed with valence charge
+N_TYPE_ATOM: 2               # number of atoms of this type
+PSEUDO_POT: Ta_FR.psp8
+COORD_FRAC: 
+   0.0000000000000000    0.0000000000000000    0.0000000000000000
+   0.5000000000000000    0.5000000000000000    0.5000000000000000

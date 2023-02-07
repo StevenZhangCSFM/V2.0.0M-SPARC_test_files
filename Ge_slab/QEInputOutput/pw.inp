@@ -1,0 +1,40 @@
+&CONTROL
+  calculation='scf',
+  prefix='calc',
+  pseudo_dir='.',
+  outdir='.',
+  tprnfor=.true.,
+  etot_conv_thr=1d-5,
+  verbosity='high',
+  tstress=.true.
+/
+&SYSTEM
+  ibrav=0,
+  celldm(1)=1.0,
+  nat=2,
+  ntyp=1,
+  ecutwfc=400d00,
+  occupations='smearing',
+  smearing='fermi-dirac',
+  degauss=0.002,
+  input_dft='hse',
+  x_gamma_extrapolation=.false.,
+  nbnd=21,
+  nosym=.true.
+/
+&ELECTRONS
+  diagonalization='david',
+  electron_maxstep=500,
+  startingwfc='random',
+/
+CELL_PARAMETERS alat
+  7.64756068310503 0 0
+  -3.82378034155251 6.62298182855203 0
+  0 0 22.0
+ATOMIC_SPECIES
+Ge 72.63 32_Ge_14_2.2_2.3_pbe_n_v1.0.upf
+ATOMIC_POSITIONS bohr
+Ge 0 0 15.0121665190648
+Ge 3.82378033796114 2.20766061318904 13.7116685076552
+K_POINTS automatic
+4 4 1 1 1 0
