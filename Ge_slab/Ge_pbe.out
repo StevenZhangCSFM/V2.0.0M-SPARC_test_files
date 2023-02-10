@@ -1,0 +1,122 @@
+***************************************************************************
+*                      M-SPARC v1.0.0 (Nov 16, 2022)                      *
+*   Copyright (c) 2019 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                Date: 10-Feb-2023  Start time: 11:49:46                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+LATVEC_SCALE: 1.000000 1.000000 1.000000 
+LATVEC:
+7.647560683105030 0.000000000000000 0.000000000000000 
+-3.823780341552510 6.622981828552030 0.000000000000000 
+0.000000000000000 0.000000000000000 22.000000000000000 
+FD_GRID: 38 38 110
+FD_ORDER: 12
+BC: P P D
+KPOINT_GRID: 4 4 1
+KPOINT_SHIFT: 5.000000e-01 5.000000e-01 0
+ELEC_TEMP_TYPE: fermi-dirac
+SMEARING: 0.001000000
+CHEB_DEGREE: 35
+NSTATES: 22
+EXCHANGE_CORRELATION: GGA_PBE
+CALC_STRESS: 0
+CALC_PRES: 0
+MAXIT_SCF: 100
+TOL_SCF: 1.00E-05
+TOL_POISSON: 1.00E-07
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.00E-07
+MIXING_VARIABLE: potential
+MIXING_PRECOND: kerker
+TOL_PRECOND: 4.03E-05
+PRECOND_KERKER_KTF: 1.00
+PRECOND_KERKER_THRESH: 0.10
+MIXING_PARAMETER: 0.70
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART: 0
+REFERENCE_CUTOFF: 0.50
+RHO_TRIGGER: 4
+FIX_RAND: 0
+PRINT_FORCES: 1
+PRINT_ATOMS: 1
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+OUTPUT_FILE: Ge.out
+***************************************************************************
+                                Cell                                       
+***************************************************************************
+Lattice vectors:
+7.647560683105030 0.000000000000000 0.000000000000000 
+-3.823780341552510 6.622981828552030 0.000000000000000 
+0.000000000000000 0.000000000000000 22.000000000000000 
+Volume                  :  1.1142924196E+03 (Bohr^3)
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Mesh spacing in x-direction        :  0.201252 (Bohr)
+Mesh spacing in y-direction        :  0.201252 (Bohr)
+Mesh spacing in z direction        :  0.200000 (Bohr)
+Number of symmetry adapted k-points:  8
+Output printed to                  :  Ge.out
+Total number of atom types         :  1
+Total number of atoms              :  2
+Total number of electrons          :  28
+Atom type 1  (valence electrons)   :  Ge 14
+Pseudopotential                    :  32_Ge_14_2.2_2.3_pbe_n_v1.0.psp8
+lloc                               :  4
+Pseudocharge radii of atom type 1  :  7.45 7.45 7.40
+Number of atoms of type 1          :  2
+Estimated total memory usage       :  2.12 GB
+=====================================================================
+                    Self Consistent Field (SCF#1)                     
+=====================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -8.0440352790E+01        5.229E-02        2237.258
+2            -8.0453556997E+01        4.181E-02        2237.259
+3            -8.0454508056E+01        2.853E-02        486.615
+4            -8.0454616423E+01        2.174E-02        485.413
+5            -8.0454673783E+01        1.300E-02        483.789
+6            -8.0454693101E+01        7.435E-03        485.057
+7            -8.0454698477E+01        3.941E-03        484.552
+8            -8.0454699190E+01        2.099E-03        484.092
+9            -8.0454699116E+01        1.118E-03        481.052
+10           -8.0454699093E+01        7.270E-04        483.581
+11           -8.0454698917E+01        3.687E-04        479.290
+12           -8.0454699558E+01        2.180E-04        481.814
+13           -8.0454698742E+01        1.330E-04        478.122
+14           -8.0454699003E+01        8.063E-05        477.900
+15           -8.0454699102E+01        3.741E-05        480.666
+16           -8.0454698970E+01        1.719E-05        476.400
+17           -8.0454698787E+01        4.634E-06        473.818
+Total number of SCF: 17    
+====================================================================
+                                Energy                              
+====================================================================
+Free energy per atom               : -8.0454698787E+01 (Ha/atom)
+Total free energy                  : -1.6090939757E+02 (Ha)
+Band structure energy              : -2.3981600887E+01 (Ha)
+Exchange correlation energy        : -3.5593025421E+01 (Ha)
+Self and correction energy         : -1.9857276704E+02 (Ha)
+Entropy*kb*T                       : -6.5348663235E-09 (Ha)
+Fermi level                        : -1.6384963003E-01 (Ha)
+Average force                      :  4.9547605267E-03 (Ha/Bohr)
+Maximum force                      :  4.9547605267E-03 (Ha/Bohr)
+Time for force calculation         :  14.136 (sec)
+***************************************************************************
+                               Timing info                                 
+***************************************************************************
+Total walltime                     :  9984.876 sec
+___________________________________________________________________________
+
+***************************************************************************
+*             Material Physics & Mechanics Group, Georgia Tech            *
+*                       PI: Phanish Suryanarayana                         *
+*               List of contributors: See the documentation               *
+*         Citation: See README.md or the documentation for details        *
+*               Acknowledgements: U.S. DOE SC (DE-SC0019410)              *
+*      {Preliminary developments: U.S. NSF (1333500,1553212)}             *
+***************************************************************************
+                                                                           
